@@ -1,0 +1,100 @@
+:root{
+    /* COLORES BASE */
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-ligth-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm:14px;
+    --md:16px;
+    --lg:18px;
+}
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+.login{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.from-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+.title-register{
+    font-size: var(--md);
+    margin-bottom: 15px;
+}
+.subtitle{
+    color: var(--very-ligth-pink);
+    font-size: var(--md);
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.label{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.input{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 11px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form div{
+    display: flex;
+    flex-direction: column;
+}
+.primary-button{
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+}
+.login-button{
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+.reset{
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-align: center;
+}
+.register-button{
+    width: 100%;
+    background-color: var(--text-input-field);
+    color: var(--hospital-green);
+    border-radius: 8px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid var(--hospital-green);
+}
+@media(max-width:640px){
+    .form-container{
+        height: 100%;
+    }
+    .form{
+        height: 100%;
+        justify-content: space-between;
+    }
+}
